@@ -22,6 +22,7 @@ RUN git clone https://github.com/americanwookie/airsonos.git && cd airsonos && e
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 ADD dbus.sh /build/
 RUN chmod +x /build/dbus.sh
+ADD listener.py /usr/bin/listener.py
 
 EXPOSE 5000 5001 5002 5003 5004 5005 5006 5006 5007 5008 5009 5010 5011 5012 5013 5014 5015
 
